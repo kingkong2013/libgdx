@@ -34,8 +34,8 @@ public class Basic3DTest extends GdxTest implements ApplicationListener {
 	
 	@Override
 	public void create () {
-		modelBatch = new ModelBatch(new CompositeShaderProvider());
-//		modelBatch = new ModelBatch();
+//		modelBatch = new ModelBatch(new CompositeShaderProvider());
+		modelBatch = new ModelBatch();
 		lights = new Lights();
 		lights.ambientLight.set(0.4f, 0.4f, 0.4f, 1f);
 		lights.add(new DirectionalLight().set(0.8f, 0.8f, 0.8f, -1f, -0.8f, -0.2f));
